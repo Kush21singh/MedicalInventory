@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  
+  .form {
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 900px;
+  }
+  
+  h1 {
+    grid-column: 1 / span 4;
+    text-align: center;
+  }
+  
+  .form label {
+    font-weight: bold;
+  }
+  
+  .product-list {
+    grid-column: 1 / span 4;
+  }
+  
+  /* Style individual form fields (Medicine Name, Description, Price, Quantity) as needed */
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  li > span {
+    flex: 1;
+    text-align: center;
+  }
